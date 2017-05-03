@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="./css/styleIndex.css">
 	<link rel="stylesheet" href="./css/w3.css">
 	<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
-	
 	<script src="./js/script.js"></script>
 	
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<![endif]-->
+	<!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+	<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. Upgrade for free today." />
+	</a> </div> <![endif]-->
+	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
   </head>
   <body>
     <header class="w3-bar w3-white-text w3-gray-bg">
-        <div class="w3-bar-item w3-mobile"> <h1>Team <span class="highlight">2223-Z</span></h1> </div>
+        <div id="titleOfPage" class="w3-bar-item w3-mobile"> <h1><span class="highlight">2223-Z</span></h1> </div>
         <nav class="w3-bar-item w3-mobile">
           <ul class="w3-bar-item w3-mobile">
-			<div onclick="clickableDropdown()" class="w3-bar-item w3-mobile w3-dropdown-click w3-right w3-gray-bg">
+			<div onclick="clickableDropdown()" id="buttonContainer" class="w3-bar-item w3-mobile w3-dropdown-click w3-right w3-gray-bg">
 				<div class="w3-white-text w3-hover-red-text fa fa-bars"></div>
 					<div id="navDropdown" class="w3-dropdown-content w3-bar-block w3-card-4 w3-white-bg w3-center w3-animate-opacity" style="right:0; margin-top:25px;">
 						<a href="index.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-red-text"><span class=" fa fa-home w3-large"></span> Home</li></a>
@@ -40,11 +40,12 @@
         <img src="./images/VEX In the Zone Logo No BG.png" alt="VEX Robotics Competiton In the Zone">
     </section>
 	
-	<section id="content" class="">
+	<section id="content" class="w3-card-4">
 		<div id="contentContainer" class="">
-			<p>Welcome to 2223-Z's website!<br/> This website will give you information about:<br/>
+			<p class="w3-center"><span class="w3-xxlarge">Welcome to <span class="highlight">2223-Z</span>'s website!</span><br/> With this website you can learn about:<br/></p>
 				<ol>
 					<li>Our team and our history</li>
+					<li>The new VRC game "In the Zone"</li>
 					<li>The Computer Aided Designs (CADs) that helped us develop our robots</li>
 					<li>Our previous robots</li>
 					<li>Our current robot</li>
@@ -52,21 +53,20 @@
 					<li>Our contact information</li>
 					<li>Our sponsors</li>
 				</ol>
-			<p>Feel free to search the website!</p>
-			</p>
+			<p class="w3-center w3-large">Feel free to search the website!</p>
 		</div>
 	</section>
 	
     <section id="boxes" class="w3-row w3-mobile w3-black-text w3-center w3-clear">
-        <div class="box w3-col l4 m4 s12 w3-mobile">
+        <div class="box w3-col l4 m6 s12 w3-mobile">
           <a href="https://uhs.upr.edu//"><img src="./images/uhsLogo.png"></a>
           <h3>UHS</h3>
         </div>
-        <div class="box w3-col l4 m4 s12 w3-mobile">
+        <div class="box w3-col l4 m6 s12 w3-mobile">
           <a href="http://www.uprrp.edu/"><img src="./images/uprrpLogo.png"></a>
           <h3>UPR-RP</h3>
         </div>
-        <div class="box w3-col l4 m4 s12 w3-mobile">
+        <div class="box w3-col l4 m6 s12 w3-mobile">
           <a href="https://uhs.upr.edu//"><img src="./images/uhsRobotics.png"></a>
           <h3>UHS Robotics</h3>
         </div>

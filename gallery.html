@@ -5,150 +5,85 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Gallery</title>
-		<link rel="stylesheet" href="./style.css">
-		<meta name="description" content="Free Html5 Templates and Free Responsive Themes Designed by Kimmy | zerotheme.com">
-		<meta name="author" content="www.zerotheme.com">
+		<!-- CSS =============================================================== -->
+		<link rel="stylesheet" href="./css/styleIndex.css">
+		<link rel="stylesheet" href="./css/w3.css">
+		<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+		<!-- javaScript ======================================================== -->
+		<script src="./js/script.js"></script>
 		
-		<!-- CSS ================================================== -->
-		<link rel="stylesheet" href="css/styleGallery.css">
-		<link rel="stylesheet" href="css/responsive.css">
-		<link rel='stylesheet' href="css/camera.css"> 
-		<!-- javaScript =========================================== -->
-		<script type='text/javascript' src='js/jquery.min.js'></script>
-		<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
-		<script type='text/javascript' src='js/camera.min.js'></script> 
-		<script>
-			jQuery(function(){
-				jQuery('#camera_wrap').camera({
-					height: '400px',
-					loader: 'bar',
-					pagination: false,
-					thumbnails: true
-				});
-			});
-		</script>
+		<!-- Image Slider ====================================================== -->
+		<link rel="stylesheet" href="./css/idealImageSlider/ideal-image-slider.css">
+		<link rel="stylesheet" href="./css/idealImageSlider/default.css">
+		<style media="screen">
+		#slider {
+			max-width: 900px;
+			margin: 50px auto;
+		}
+		</style>
+		
 		
 		<!-- Add Favicon Later ****************************************<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>************-->
 		
-			<!--[if lt IE 8]>
-		   <div style=' clear: both; text-align:center; position: relative;'>
-			 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-			   <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-			</a>
-		  </div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<![endif]-->
+		<!--[if lt IE 8]><div style=' clear: both; text-align:center; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. Upgrade for free today." />
+		</a> </div> <![endif]-->
+		<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
 		
 	</head>
 	<body>
 		<!--------------Header--------------->
-		<header>
-			  <div class="container">
-				<div id="titleOfPage">
-				  <h1>Team <span class="highlight">2223Z</span></h1>
+		    <header class="w3-bar w3-white-text w3-gray-bg">
+        <div class="w3-bar-item w3-mobile"> <h1><span class="highlight">2223-Z</span></h1> </div>
+        <nav class="w3-bar-item w3-mobile">
+          <ul class="w3-bar-item w3-mobile">
+			<div onclick="clickableDropdown()" class="w3-bar-item w3-mobile w3-dropdown-click w3-right w3-gray-bg">
+				<div class="w3-white-text w3-hover-red-text fa fa-bars"></div>
+					<div id="navDropdown" class="w3-dropdown-content w3-bar-block w3-card-4 w3-white-bg w3-center w3-animate-opacity" style="right:0; margin-top:25px;">
+						<a href="index.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class=" fa fa-home w3-large"></span> Home</li></a>
+						<a href="aboutUs.html" class="navBarItem"><li id="navLiItem"class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-user w3-large"></span> About Us</li></a>
+						<a href="gallery.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-red-text"><span class="fa fa-image w3-large"></span> Gallery</li></a>
+						<a href="engineeringNotebook.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-book w3-large"></span> Engineering Notebook</li></a>
+						<a href="contactUs.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-address-book w3-large"></span> Contact Us</li></a>
+						<a href="sponsors.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-group w3-large"></span> Sponsors</li></a>
+					</div>
 				</div>
-				<nav>
-				  <ul>
-					<li class="highlight"><a href="index.html">Home</a></li>
-					<li><a href="aboutUs.html">About Us</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="engineeringNotebook.html">Engineering Notebook</a></li>
-					<li><a href="contactUs.html">Contact Us</a></li>
-				  </ul>
-				</nav>
-			  </div>
-			</header>
+          </ul>
+        </nav>
+    </header>
 
 		<!--------------Content--------------->
-		<section id="content">
-			<!--------- Image Carrousel -------->
-			<div class="feature">
-				<div class="camera_wrap camera_magenta_skin" id="camera_wrap">
-					<div data-thumb="images/slides/thumbs/1.jpg" data-src="images/slides/slide1.jpg">
-						<div class="camera_caption fadeFromBottom">
-							Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
-						</div>
-					</div>
-					<div data-thumb="images/slides/thumbs/2.jpg" data-src="images/slides/slide2.jpg">
-						<div class="camera_caption fadeFromBottom">
-							It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
-						</div>
-					</div>
-					<div data-thumb="images/slides/thumbs/3.jpg" data-src="images/slides/slide3.jpg">
-						<div class="camera_caption fadeFromBottom">
-							<em>It's completely free</em> (even if a donation is appreciated)
-						</div>
-					</div>
-					<div data-thumb="images/slides/thumbs/4.jpg" data-src="images/slides/slide4.jpg">
-						<div class="camera_caption fadeFromBottom">
-							<em>It's completely free</em> (even if a donation is appreciated)
-						</div>
-					</div>
-					<div data-thumb="images/slides/thumbs/5.jpg" data-src="images/slides/slide5.jpg">
-						<div class="camera_caption fadeFromBottom">
-							<em>It's completely free</em> (even if a donation is appreciated)
-						</div>
-					</div>
-					<div data-thumb="images/slides/thumbs/6.jpg" data-src="images/slides/slide6.jpg">
-						<div class="camera_caption fadeFromBottom">
-							<em>It's completely free</em> (even if a donation is appreciated)
-						</div>
-					</div>
-					<div data-thumb="images/slides/thumbs/7.jpg" data-src="images/slides/slide7.jpg">
-						<div class="camera_caption fadeFromBottom">
-							<em>It's completely free</em> (even if a donation is appreciated)
-						</div>
-					</div>
-					<div data-thumb="images/slides/thumbs/8.jpg" data-src="images/slides/slide8.jpg">
-						<div class="camera_caption fadeFromBottom">
-							<em>It's completely free</em> (even if a donation is appreciated)
-						</div>
-					</div>
-				</div>
-				<div style="clear:both; display:block; height:10px"></div>
+		<section class="w3-center" style="width:100%; margin:0 auto;">
+			<!--------- Image Slider -------->
+			<div id="slider">
+			
+				<!--Repeat the code starting here to add a photo-->
+				<img data-src="./images/Cono.png" data-src-2x="./images/Cono.png"/>				
+				<!--Repeat the code ending here to add a photo-->
+				<img data-src="./images/teamLogo.jpeg" data-src-2x="./images/teamLogo.jpeg"/>s
 			</div>
+			<script src="./js/ideal-image-slider.js"></script> <script> var slider = new IdealImageSlider.Slider('#slider'); slider.addCaptions(); slider.start(); </script>
+	
 			<!--------- Welcome Message -------->
-			<div class="welcome">
-				<p>Hello and welcome to 2223-Z's photo gallery</p>
+			<div style="margin: 0px 20px 20px 20px;font-size:20px; text-align:center;">
+				<p><span class="w3-xxl">Hello and welcome to 2223-Z's photo gallery!</span> <br>In here you will find the latest team and robot photos</p>
 			</div>
 			
-			<!--------- Grid -------->
-			<div class="grid">		
-				<div class="row block01">
-					<!--Repeat the code starting here to add a photo-->
-					<div class="box">
-						<article> <a href="blog.html"><img src="images/thumb1.jpg" class="grayscale"/><h2>Sed accumsan libero</h2></a> </article>
-					</div>
-					<!--Repeat the code ending here to add a photo-->
-					<div class="box">
-						<article> <a href="blog.html"><img src="images/thumb1.jpg" class="grayscale"/><h2>Sed accumsan libero</h2></a> </article>
-					</div>
-					<div class="box">
-						<article> <a href="blog.html"><img src="images/thumb1.jpg" class="grayscale"/><h2>Sed accumsan libero</h2></a> </article>
-					</div>
-					<div class="box">
-						<article> <a href="blog.html"><img src="images/thumb1.jpg" class="grayscale"/><h2>Sed accumsan libero</h2></a> </article>
-					</div>
-					<div class="box">
-						<article> <a href="blog.html"><img src="images/thumb1.jpg" class="grayscale"/><h2>Sed accumsan libero</h2></a> </article>
-					</div>
-					<div class="box">
-						<article> <a href="blog.html"><img src="images/thumb1.jpg" class="grayscale"/><h2>Sed accumsan libero</h2></a> </article>
-					</div>
-					<div class="box">
-						<article> <a href="blog.html"><img src="images/thumb1.jpg" class="grayscale"/><h2>Sed accumsan libero</h2></a> </article>
-					</div>
+			<!--Repeat the code starting here to add a row-->
+			<section id="boxes" class="w3-row w3-mobile w3-black-text w3-center w3-clear">
+				<div class="box w3-col l4 m6 s12 w3-mobile">
+					<img src="./images/uhsLogo.png">
+				  <h3>Model 1</h3>
 				</div>
-			</div>
-		</section>
-		
-		<!--Footer-->
-		<footer>
-			<div class="copyright">
-				<p>Copyright © 2012 - <a href="http://www.zerotheme.com/432/free-responsive-html5-css3-website-templates.html" target="_blank">Free Html5 Templates</a> by <a href="http://www.zerotheme.com" target="_blank">Zerotheme.com</a></p>
-			</div>
-		</footer>
+				<div class="box w3-col l4 m6 s12 w3-mobile">
+					<img src="./images/uprrpLogo.png">
+					<h3>Model 1</h3>
+				</div>
+				<div class="box w3-col l4 m6 s12 w3-mobile">
+					<img src="./images/uhsRobotics.png">
+					<h3>Model 1</h3>
+				</div>
+			</section>
+			<!--Repeat the code ending here to add a row-->
 	</body>
 </html>
