@@ -1,0 +1,140 @@
+/******************** Global ********************/
+@-ms-viewport{
+  width: device-width;
+}
+
+body{
+	width:100%;
+	padding:0;
+	margin:0;
+	font:15px/1.5 Arial, Helvetica, sans-serif;
+	background-color:#f4f4f4;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+.highlight{
+	color:#ff0000;
+	font-weight:bold;
+}
+.container{
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+}
+
+/******************** Just in case compatibility problems ********************/
+header, section, footer, aside, nav, main, article, figure {
+	display: block;
+}
+/********************* Header *********************/
+
+.navBarItem{
+		text-decoration:none;
+	}
+
+@media only screen and (min-width:550px){}
+	header nav {
+		padding-top:20px!important;
+		float:right!important;
+	}
+}
+
+/******************** introduction ********************/
+#introduction{
+	margin-top:;
+	height:275px;
+	background: #000 url("../images/VEX In the Zone.png") no-repeat center top;
+	background-size:100%;
+	text-align:center;
+	color:#ffffff;
+}
+
+#introduction img{
+	margin-top:0px;
+	width:25%;
+}
+
+#introduction p{
+	font-size:20px;
+}
+@media only screen and (min-width:450px){#introduction{ height:225px;}}
+@media only screen and (min-width:500px){#introduction{ height:254px;}}
+@media only screen and (min-width:550px){#introduction{ height:282px;}}
+@media only screen and (min-width:600px){#introduction{ height:310px;}}
+@media only screen and (min-width:650px){#introduction{ height:338px;}}
+@media only screen and (min-width:700px){#introduction{ height:366px;}}
+@media only screen and (min-width:750px){#introduction{ height:395px;}}
+@media only screen and (min-width:800px){#introduction{ height:423px;}}
+@media only screen and (min-width:850px){#introduction{ height:451px;}}
+@media only screen and (min-width:900px){#introduction{ height:489px;}}
+@media only screen and (min-width:950px){#introduction{ height:517px;}}
+@media only screen and (min-width:1000px){#introduction{ height:545px;}}
+@media only screen and (min-width:1050px){#introduction{ height:573px;}}
+@media only screen and (min-width:1100px){#introduction{ height:601px;}}
+@media only screen and (min-width:1150px){#introduction{ height:630px;}}
+@media only screen and (min-width:1200px){#introduction{ height:658px;}}
+@media only screen and (min-width:1250px){#introduction{ height:687px;}}
+@media only screen and (min-width:1300px){#introduction{ height:715px;}}
+@media only screen and (min-width:1350px){#introduction{ height:744px;}}
+@media only screen and (min-width:1400px){#introduction{ height:772px;}}
+@media only screen and (min-width:1450px){#introduction{ height:801px;}}
+@media only screen and (min-width:1500px){#introduction{ height:829px;}}
+@media only screen and (min-width:1550px){#introduction{ height:858px;}}
+@media only screen and (min-width:1600px){#introduction{ height:886px;}}
+@media only screen and (min-width:1650px){#introduction{ height:915px;}}
+@media only screen and (min-width:1700px){#introduction{ height:943px;}}
+@media only screen and (min-width:1750px){#introduction{ height:972px;}}
+@media only screen and (min-width:1800px){#introduction{ height:1000px;}}
+@media only screen and (min-width:1850px){#introduction{ height:1029px;}}
+@media only screen and (min-width:1900px){#introduction{ height:1057px;}}
+@media only screen and (min-width:1950px){#introduction{ height:1086px;}}
+@media only screen and (min-width:2000px){#introduction{ height:1114px;}}
+@media only screen and (min-width:2050px){#introduction{ height:1143px;}}
+@media only screen and (min-width:2100px){#introduction{ height:1171px;}}
+@media only screen and (min-width:2150px){#introduction{ height:1200px;}}
+@media only screen and (min-width:2200px){#introduction{ height:1228px;}}
+@media only screen and (min-width:2250px){#introduction{ height:1257px;}}
+@media only screen and (min-width:2300px){#introduction{ height:1285px;}}
+@media only screen and (min-width:2350px){#introduction{ height:1314px;}}
+@media only screen and (min-width:2400px){#introduction{ height:1342px;}}
+@media only screen and (min-width:2450px){#introduction{ height:1371px;}}
+@media only screen and (min-width:2500px){#introduction{ height:1399px;}}
+/******************** Boxes ********************/
+#boxes{
+	margin-top:20px;
+}
+
+#boxes .box{
+	text-align: center;
+	width:30%;
+	padding:10px;
+}
+
+#boxes .box img{
+	width:90px;
+}
+
+/******************* W3.CSS - Pro ***************/
+.w3-red-text{ color:#f00!important;}
+.w3-gray-text{ color:#35424a!important;}
+.w3-black-text{	color:#000!important;}
+.w3-white-text{	color:#fff!important;}
+
+.w3-red-bg{	background-color:#f00!important;}
+.w3-gray-bg{background-color:#35424a!important;}
+.w3-black-bg{ background-color:#000!important;}
+.w3-white-bg{ background-color:#fff!important;}
+
+.w3-hover-red-text:hover{color:#f00!important;}
+.w3-hover-gray-text:hover{ color:#35424a!important;}
+.w3-hover-black-text:hover{ color:#000!important;}
+.w3-hover-white-text:hover{ color:#fff!important;}
+
+.w3-hover-red-bg:hover{ background-color:#f00!important;}
+.w3-hover-gray-bg:hover{ background-color:#35424a!important;}
+.w3-hover-black-bg:hover{ background-color:#000!important;}
+.w3-hover-white-bg:hover{ background-color:#fff!important;}
