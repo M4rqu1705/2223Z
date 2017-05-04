@@ -1,82 +1,116 @@
-/******************** Global ********************/
-@-ms-viewport{ width: device-width;}
-body{ width:100%; padding:0; margin:0; font:15px/1.5 Arial, Helvetica, sans-serif!important; background-color:#f4f4f4;}
-ul{ margin:0; padding:0;}
-.highlight{ color:#ff0000; font-weight:bold;}
+/* Universal Stylings **********************/
+/** Just in case compatibility problems *********************-
+	/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+	html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+	article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block;}
+	audio, canvas, progress, video { display: inline-block; vertical-align: baseline;}
+	audio:not([controls]){ display: none; height: 0;} [hidden], template{ display: none;} a{ background: transparent;} a:active, a:hover{ outline: 0;}
+	abbr[title]{ border-bottom: 1px dotted;} b, strong{ font-weight: bold;} dfn{  font-style: italic;} h1{ font-size: 2em; margin: 0.67em 0;}
+	mark{ background: #ff0; color: #000;} small{ font-size: 80%;}
+	sub,sup{ font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;} sup{ top: -0.5em;} sub{ bottom: -0.25em;}
+	img{ border: 0;} svg:not(:root){ overflow: hidden;} figure{ margin: 1em 40px;}
+	hr{-moz-box-sizing: content-box; box-sizing: content-box; height: 0;} pre{overflow: auto;}
+	code, kbd, pre, samp{ font-family: monospace, monospace; font-size: 1em;}
+	button, input, optgroup, select, textarea{ color: inherit; font: inherit; margin: 0;} button{ overflow: visible;}
+	button, select{ text-transform: none;}
+	button, html input[type="button"], input[type="reset"],input[type="submit"]{ -webkit-appearance: button; cursor: pointer;}
+	button[disabled],html input[disabled]{ cursor: default;} button::-moz-focus-inner, input::-moz-focus-inner{border: 0; padding: 0;}
+	input{ line-height: normal;} input[type="checkbox"], input[type="radio"]{ box-sizing: border-box; padding: 0;}
+	input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{height: auto;}
+	input[type="search"]{ -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}
+	input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
+	fieldset{ border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em;} legend{ border: 0; padding: 0;} textarea{ overflow: auto;}
+	optgroup{ font-weight: bold;} table{ border-collapse: collapse; border-spacing: 0;} td, th{padding: 0;}
+	/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/** Header *********************/
+	header{ border-bottom: 3px solid #f00; width:100%;}
+	.navBarItem{ text-decoration:none;}
+/** index.html **********************/
+	@-ms-viewport{ width: device-width;}
+	body{ width:100%; padding:0; margin:0; font:15px/1.5 Arial, Helvetica, sans-serif!important; background-color:#f4f4f4;}
+	ul{ margin:0; padding:0;}
+	.highlight{ color:#ff0000; font-weight:bold;}
+/*** Introduction ********************/
+/*** Content ********************/
+/*** Boxes ********************/
+	#boxes{ margin-top:50px; width:100%!important;}
+	#boxes .box{ text-align: center; padding:10px;}
+	#boxes .box h3{ font-size:18px!important;}
+	#boxes .box img{ width:150px; height:150px;}
 
-/******************** Just in case compatibility problems ********************/
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block;}
-audio, canvas, progress, video { display: inline-block; vertical-align: baseline;}
-audio:not([controls]){ display: none; height: 0;} [hidden], template{ display: none;} a{ background: transparent;} a:active, a:hover{ outline: 0;}
-abbr[title]{ border-bottom: 1px dotted;} b, strong{ font-weight: bold;} dfn{  font-style: italic;} h1{ font-size: 2em; margin: 0.67em 0;}
-mark{ background: #ff0; color: #000;} small{ font-size: 80%;}
-sub,sup{ font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;} sup{ top: -0.5em;} sub{ bottom: -0.25em;}
-img{ border: 0;} svg:not(:root){ overflow: hidden;} figure{ margin: 1em 40px;}
-hr{-moz-box-sizing: content-box; box-sizing: content-box; height: 0;} pre{overflow: auto;}
-code, kbd, pre, samp{ font-family: monospace, monospace; font-size: 1em;}
-button, input, optgroup, select, textarea{ color: inherit; font: inherit; margin: 0;} button{ overflow: visible;}
-button, select{ text-transform: none;}
-button, html input[type="button"], input[type="reset"],input[type="submit"]{ -webkit-appearance: button; cursor: pointer;}
-button[disabled],html input[disabled]{ cursor: default;} button::-moz-focus-inner, input::-moz-focus-inner{border: 0; padding: 0;}
-input{ line-height: normal;} input[type="checkbox"], input[type="radio"]{ box-sizing: border-box; padding: 0;}
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{height: auto;}
-input[type="search"]{ -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
-fieldset{ border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em;} legend{ border: 0; padding: 0;} textarea{ overflow: auto;}
-optgroup{ font-weight: bold;} table{ border-collapse: collapse; border-spacing: 0;} td, th{padding: 0;}
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-
-/********************* Header *********************/
-header{ border-bottom: 3px solid #f00;}
-#navDropdown{ margin-top:34px!important; margin:auto;}
-.navBarItem{ text-decoration:none;}
-@media only screen and (max-width:539px){header nav{padding:0px!important;}
-	#titleOfPage{padding:0px; margin:0px; margin-top:10px;} #titleOfPage h1{padding:0px; margin:0px;}
-	#buttonContainer{padding:0px; padding-top:10px; padding-bottom:10px; margin:0px;}
-	#navDropdown{ width:300px;}#navLiItem{ height:34px; width:250px; overflow:hidden; margin:auto;}
+/*======================================================================================================================================================================================================================*/
+/* Small Screen Stylings *********************/@media only screen and (min-width:200px) and (max-width:600px){
+/** Header *********************/
+	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat center center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px auto;}
+	header nav{padding:0px!important; margin:0px!important;}
+	header nav ul{padding:0px!important; margin:0px!important;}
+	header nav ul div{padding:0px 0px 10px 0px!important; margin:0px!important;}
+	#navDropdown{ width:90%; margin-top:34px!important; margin:auto!important;}
+	#navLiItem{ height:34px; width:250px; overflow:hidden; margin:auto;}
+	
+/** index.html **********************/
+/*** Introduction ********************/
+	#introduction{ height:197px; background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px!important; padding: 0px!important;}
+	#introduction img{ margin-top:0px; width:20%;}
+/*** Content ********************/
+	#content{ width:100%!important; padding: 15px!important; margin:0px!important;} 
+	#welcomeMessage{font-size:25px!important;}
+	#content p{ margin:0px; padding:0px;}
+	#content p ol{ float:left;}
+/*** Boxes ********************/
 }
-@media only screen and (min-width:540px){header nav{ padding-top:20px!important; float:right!important;}
-	#navDropdown{ width:250px;}
+/*======================================================================================================================================================================================================================*/
+/* Medium Screen Stylingss *********************/@media only screen and (min-width:601px) and (max-width:899px){
+/** Header *********************/
+	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat left center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px 30px;}
+	header nav{padding:0px!important; margin:0px!important;}
+	header nav ul{padding:0px!important; margin:0px!important;}
+	header nav ul div{padding:0px!important; margin:0px!important;}
+	#navDropdown{ width:40%;}
+	#navLiItem{ height:34px; width:100%; overflow:hidden; margin:auto;}
+/** index.html **********************/
+	#introduction{background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px!important; padding: 0px!important;}
+	#introduction img{ margin-top:0px; width:20%;}
+/*** Introduction ********************/
+/*** Content ********************/
+	#content{ width:100%!important; padding: 15px!important; margin:0px!important;} 
+	#welcomeMessage{font-size:35px!important;}
+	#content p{ margin:0px; padding:0px;}
+	#content p ol{ float:left;}
+/*** Boxes ********************/
 }
-
-@media only screen and (min-width:900px){#navLiItem{ height:34px; width:50px; transition: width 0.3s ease 0s; overflow:hidden; margin:auto;}
+/*======================================================================================================================================================================================================================*/
+/* Large Screen Stylings *********************/@media only screen and (min-width:900px){
+/** Header *********************/
+	#navLiItem{ height:34px; width:50px; transition: width 0.45s ease 0s; overflow:hidden; margin:auto;}
 	#navLiItem:hover{width:250px;}
+	#titleOfPage{background: #35424a url("../images/teamLogo.jpg") no-repeat left top; background-size:72px 100px;  width:72px; height:100px;}
+/** index.html **********************/
+/*** Introduction ********************/
+/*** Content ********************/
+/*** Boxes ********************/
 }
-
-/******************** Introduction ********************/
-
-#introduction{ height:197px; background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px!important; padding: 0px!important;}
-#introduction img{ margin-top:0px; width:20%;}
-@media only screen and (min-width:450px){#introduction{ height:225px;}}
-@media only screen and (min-width:500px){#introduction{ height:254px;}}
-@media only screen and (min-width:550px){#introduction{ height:282px;}}
-@media only screen and (min-width:600px){#introduction{ height:310px;}}
-@media only screen and (min-width:650px){#introduction{ height:338px;}}
-@media only screen and (min-width:700px){#introduction{ height:366px;}}
-@media only screen and (min-width:750px){#introduction{ height:395px;}}
-@media only screen and (min-width:800px){#introduction{background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:872px 450px;} #introduction img{width:174px; height:135px;}}
-
-/******************** Content ********************/
-@media only screen and (max-width:800px){
-	#content{ padding: 0px 35px 35px 35px; margin:0px;} 
+/*======================================================================================================================================================================================================================*/
+/* Other Specific Stylings ********************/
+/** index.html **********************/
+/*** Introduction ********************/
+	@media only screen and (min-width:450px){#introduction{ height:225px;}}
+	@media only screen and (min-width:500px){#introduction{ height:254px;}}
+	@media only screen and (min-width:550px){#introduction{ height:282px;}}
+	@media only screen and (min-width:600px){#introduction{ height:310px;}}
+	@media only screen and (min-width:650px){#introduction{ height:338px;}}
+	@media only screen and (min-width:700px){#introduction{ height:366px;}}
+	@media only screen and (min-width:750px){#introduction{ height:395px;}}
+	@media only screen and (min-width:800px){#introduction{background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:872px 450px;} #introduction img{width:174px; height:135px;}}
+/*** Content ********************/
+	#content{ margin:auto; width:872px; padding-top:15px; padding-bottom:50px;}
 	#content div p{ margin:0px; padding:0px;}
 	#content div p ol{ float:left;}
-}
-@media only screen and (min-width:800px){
-	#content{ margin:auto; width:872px;}
-	#content div p{ margin:0px; padding:0px;}
-	#content div p ol{ float:left;}
-	#contentContainer{padding-bottom:50px;}
-}
-/******************** Boxes ********************/
-#boxes{ margin-top:50px; width:100%!important;}
-#boxes .box{ text-align: center; padding:10px;}
-#boxes .box h3{ font-size:18px!important;}
-#boxes .box img{ width:150px;}
+	#welcomeMessage{font-size:50px;}
+/*** Boxes ********************/
 
-/******************* W3.CSS - Pro ***************/
+/*======================================================================================================================================================================================================================*/
+/* W3.CSS - Pro ***************/
 .w3-red-text{ color:#f00!important;}
 .w3-gray-text{ color:#35424a!important;}
 .w3-black-text{	color:#000!important;}
