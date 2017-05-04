@@ -27,7 +27,7 @@
 	.navBarItem{ text-decoration:none;}
 /** index.html **********************/
 	@-ms-viewport{ width: device-width;}
-	body{ width:100%; padding:0; margin:0; font:15px/1.5 Arial, Helvetica, sans-serif!important; background-color:#f4f4f4;}
+	body{ width:100%; padding:0; margin:0; font: 15px/1.5 Arial, Helvetica, sans-serif!important; background-color:#f4f4f4;}
 	ul{ margin:0; padding:0;}
 	.highlight{ color:#ff0000; font-weight:bold;}
 /*** Introduction ********************/
@@ -56,14 +56,14 @@
 	#content{ width:100%!important; padding: 15px!important; margin:0px!important;} 
 	#welcomeMessage{font-size:25px!important;}
 	#content p{ margin:0px; padding:0px;}
-	#content p ol{ float:left;}
+	#content p ol{ float:left; font-size:1000px!important;}
 /*** Boxes ********************/
 }
 /*======================================================================================================================================================================================================================*/
 /* Medium Screen Stylingss *********************/@media only screen and (min-width:601px) and (max-width:899px){
 /** Header *********************/
 	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat left center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px 30px;}
-	header nav{padding:0px!important; margin:0px!important;}
+	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
 	header nav ul{padding:0px!important; margin:0px!important;}
 	header nav ul div{padding:0px!important; margin:0px!important;}
 	#navDropdown{ width:40%;}
@@ -82,12 +82,20 @@
 /*======================================================================================================================================================================================================================*/
 /* Large Screen Stylings *********************/@media only screen and (min-width:900px){
 /** Header *********************/
-	#navLiItem{ height:34px; width:50px; transition: width 0.45s ease 0s; overflow:hidden; margin:auto;}
-	#navLiItem:hover{width:250px;}
-	#titleOfPage{background: #35424a url("../images/teamLogo.jpg") no-repeat left top; background-size:72px 100px;  width:72px; height:100px;}
+	#titleOfPage{background: #35424a url("../images/teamLogoNoBorders.png") no-repeat left top; background-size:82px 100px;  width:82px; height:100px;}
+	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
+	header nav ul{padding:0px!important; margin:0px!important;}
+	header nav ul div{padding:0px!important; margin:0px!important;}
+	#navDropdown{ width:20%;}
+	#navLiItem{ height:34px; width:50px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; overflow:hidden; margin:auto;}
+	#navLiItem:hover{width:100%;}
 /** index.html **********************/
 /*** Introduction ********************/
 /*** Content ********************/
+	#content{ width:872px!important; padding: 15px!important; margin:0px auto!important;} 
+	#welcomeMessage{font-size:50px!important;}
+	#content p{ margin:0px; padding:0px; font-size:30px;}
+	#listOfAvalableThings{ font-size:17px}
 /*** Boxes ********************/
 }
 /*======================================================================================================================================================================================================================*/
@@ -103,10 +111,7 @@
 	@media only screen and (min-width:750px){#introduction{ height:395px;}}
 	@media only screen and (min-width:800px){#introduction{background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:872px 450px;} #introduction img{width:174px; height:135px;}}
 /*** Content ********************/
-	#content{ margin:auto; width:872px; padding-top:15px; padding-bottom:50px;}
-	#content div p{ margin:0px; padding:0px;}
-	#content div p ol{ float:left;}
-	#welcomeMessage{font-size:50px;}
+
 /*** Boxes ********************/
 
 /*======================================================================================================================================================================================================================*/
