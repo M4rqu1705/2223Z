@@ -23,7 +23,7 @@
 	optgroup{ font-weight: bold;} table{ border-collapse: collapse; border-spacing: 0;} td, th{padding: 0;}
 	/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /** Header *********************/
-	header{ border-bottom: 3px solid #f00; width:100%; z-index:21;}
+	header{ border-bottom: 3px solid #f00; width:100%; z-index:30!important;}
 	.navBarItem{ text-decoration:none;}
 /** index.html **********************/
 	@-ms-viewport{ width: device-width;}
@@ -95,7 +95,7 @@
 /** gallery.html ******************/
 /*** Gallery Content ****************/
 	#galleryContent{ width:100%; margin:0px;}
-	#slider {margin:0px!important; padding:0px;}
+	#slider {margin:103px 0px 0px 0px!important; padding:0px;}
 	#galleryWelcome{font-size:20px; text-align:center; padding:30px;}
 	#galleryWelcome p{ padding:0px; margin:0px;}
 }
@@ -126,7 +126,7 @@
 /** gallery.html ******************/
 /*** Gallery Content ****************/
 	#galleryContent{ width:872px; margin:0px auto;}
-	#slider {margin:0px!important; padding:0px;}
+	#slider {margin:103px 0px 0px 0px!important; padding:0px;}
 	#galleryWelcome{font-size:20px; text-align:center; padding:45px;}
 	#galleryWelcome p{ padding:0px; margin:0px;}
 }
