@@ -64,7 +64,7 @@
 /** gallery.html ******************/
 /*** Gallery Content ****************/
 	#galleryContent{ width:100%; margin:0px;}
-	#slider {margin:0px!important; padding:0px;}
+	#slider {margin:136px 0px 0px 0px!important; padding:0px;}
 	#galleryWelcome{font-size:20px; text-align:center; padding:20px;}
 	#galleryWelcome p{ padding:0px; margin:0px;}
 }
