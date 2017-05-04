@@ -27,76 +27,94 @@
 	.navBarItem{ text-decoration:none;}
 /** index.html **********************/
 	@-ms-viewport{ width: device-width;}
-	body{ width:100%; padding:0; margin:0; font: 15px/1.5 Arial, Helvetica, sans-serif!important; background-color:#f4f4f4;}
+	body{ width:100%; padding:0; margin:0; font: 15px/1.5 Arial, Helvetica, sans-serif; background-color:#f4f4f4;}
 	ul{ margin:0; padding:0;}
 	.highlight{ color:#ff0000; font-weight:bold;}
 /*** Introduction ********************/
 /*** Content ********************/
 /*** Boxes ********************/
-	#boxes{ margin-top:50px; width:100%!important;}
+	#boxes{ margin-top:50px; width:100%;}
 	#boxes .box{ text-align: center; padding:10px;}
-	#boxes .box h3{ font-size:18px!important;}
+	#boxes .box h3{ font-size:18px;}
 	#boxes .box img{ width:150px; height:150px;}
 
 /*======================================================================================================================================================================================================================*/
 /* Small Screen Stylings *********************/@media only screen and (min-width:200px) and (max-width:600px){
 /** Header *********************/
 	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat center center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px auto;}
-	header nav{padding:0px!important; margin:0px!important;}
-	header nav ul{padding:0px!important; margin:0px!important;}
-	header nav ul div{padding:0px 0px 10px 0px!important; margin:0px!important;}
-	#navDropdown{ width:90%; margin-top:34px!important; margin:auto!important;}
+	header nav{padding:0px; margin:0px;}
+	header nav ul{padding:0px; margin:0px;}
+	header nav ul div{padding:0px 0px 10px 0px; margin:0px;}
+	#navDropdown{ width:90%; margin-top:34px; margin:auto;}
 	#navLiItem{ height:34px; width:250px; overflow:hidden; margin:auto;}
 	
 /** index.html **********************/
 /*** Introduction ********************/
-	#introduction{ height:197px; background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px!important; padding: 0px!important;}
+	#introduction{ height:197px; background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px; padding: 0px;}
 	#introduction img{ margin-top:0px; width:20%;}
 /*** Content ********************/
-	#content{ width:100%!important; padding: 15px!important; margin:0px!important;} 
-	#welcomeMessage{font-size:25px!important;}
+	#content{ width:100%; padding: 15px; margin:0px;} 
+	#welcomeMessage{font-size:25px;}
 	#content p{ margin:0px; padding:0px;}
-	#content p ol{ float:left; font-size:1000px!important;}
+	#content p ol{ float:left; font-size:1000px;}
 /*** Boxes ********************/
+/** gallery.html ******************/
+/*** Gallery Content ****************/
+	#galleryContent{ width:100%; margin:0px;}
+	#slider {margin:0px!important; padding:0px;}
+	#galleryWelcome{font-size:20px; text-align:center; padding:20px;}
+	#galleryWelcome p{ padding:0px; margin:0px;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Medium Screen Stylingss *********************/@media only screen and (min-width:601px) and (max-width:899px){
 /** Header *********************/
-	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat left center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px 30px;}
+	#titleOfPage{background: #35424a url("../images/teamLogoNoBorders.png") no-repeat left top; background-size:82px 100px;  width:82px; height:100px; padding:0px; margin:0px;}
 	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
 	header nav ul{padding:0px!important; margin:0px!important;}
 	header nav ul div{padding:0px!important; margin:0px!important;}
-	#navDropdown{ width:40%;}
+	#navDropdown{ width:40%; margin-top:46px!important;}
 	#navLiItem{ height:34px; width:100%; overflow:hidden; margin:auto;}
 /** index.html **********************/
-	#introduction{background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px!important; padding: 0px!important;}
+	#introduction{background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px; padding: 0px;}
 	#introduction img{ margin-top:0px; width:20%;}
 /*** Introduction ********************/
 /*** Content ********************/
-	#content{ width:100%!important; padding: 15px!important; margin:0px!important;} 
-	#welcomeMessage{font-size:35px!important;}
+	#content{ width:100%; padding: 15px; margin:0px;} 
+	#welcomeMessage{font-size:35px;}
 	#content p{ margin:0px; padding:0px;}
 	#content p ol{ float:left;}
 /*** Boxes ********************/
+/** gallery.html ******************/
+/*** Gallery Content ****************/
+	#galleryContent{ width:100%; margin:0px;}
+	#slider {margin:0px!important; padding:0px;}
+	#galleryWelcome{font-size:20px; text-align:center; padding:30px;}
+	#galleryWelcome p{ padding:0px; margin:0px;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Large Screen Stylings *********************/@media only screen and (min-width:900px){
 /** Header *********************/
-	#titleOfPage{background: #35424a url("../images/teamLogoNoBorders.png") no-repeat left top; background-size:82px 100px;  width:82px; height:100px;}
+	#titleOfPage{background: #35424a url("../images/teamLogoNoBorders.png") no-repeat left top; background-size:82px 100px;  width:82px; height:100px; padding:0px; margin:0px;}
 	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
 	header nav ul{padding:0px!important; margin:0px!important;}
 	header nav ul div{padding:0px!important; margin:0px!important;}
-	#navDropdown{ width:20%;}
+	#navDropdown{ width:20%; margin-top:46px!important;}
 	#navLiItem{ height:34px; width:50px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; overflow:hidden; margin:auto;}
 	#navLiItem:hover{width:100%;}
 /** index.html **********************/
 /*** Introduction ********************/
 /*** Content ********************/
-	#content{ width:872px!important; padding: 15px!important; margin:0px auto!important;} 
-	#welcomeMessage{font-size:50px!important;}
+	#content{ width:872px; padding: 15px; margin:0px auto;} 
+	#welcomeMessage{font-size:50px;}
 	#content p{ margin:0px; padding:0px; font-size:30px;}
 	#listOfAvalableThings{ font-size:17px}
 /*** Boxes ********************/
+/** gallery.html ******************/
+/*** Gallery Content ****************/
+	#galleryContent{ width:872px; margin:0px auto;}
+	#slider {margin:0px!important; padding:0px;}
+	#galleryWelcome{font-size:20px; text-align:center; padding:45px;}
+	#galleryWelcome p{ padding:0px; margin:0px;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Other Specific Stylings ********************/
@@ -135,3 +153,88 @@
 .w3-hover-gray-bg:hover{ background-color:#35424a!important;}
 .w3-hover-black-bg:hover{ background-color:#000!important;}
 .w3-hover-white-bg:hover{ background-color:#f4f4f4!important;}
+
+
+
+/*Code for flipping cards
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.card-wrapper {
+	height: 100px;
+	width: 150px;
+	perspective:800px;
+}
+
+.card{
+	width:100%;
+	height: 100%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5);
+
+	transform-style:preserve-3d;
+
+	-webkit-transition: transform .5s;
+	transition: transform .5s;
+}
+
+.front{
+	position: absolute;
+	height:100%;
+	width:100%;
+    
+    top:25%;
+    left:15%;
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.back{
+	position: absolute;
+	height:100%;
+	width:100%;
+
+	-ms-transform: rotateY(-180deg);
+   	-webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+	
+	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card:hover {
+	-ms-transform: rotateY(-180deg);
+   	-webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+</style>
+</head>
+<body>
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="front">
+        La cara de Nim
+      </div>
+      <div class="back">
+        La cara de Paco
+      </div>
+    </div>
+  </div>
+    <div class="card-wrapper">
+    <div class="card">
+      <div class="front">
+        La cara de Nimgat
+      </div>
+      <div class="back">
+        La cara de ningato
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+*/

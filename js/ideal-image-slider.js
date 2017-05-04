@@ -129,8 +129,9 @@ var IdealImageSlider = (function() {
 			img.setAttribute('src', slide.getAttribute('data-src'));
 			img.onload = function() {
 				slide.style.backgroundImage = 'url(' + slide.getAttribute('data-src') + ')';
-				slide.setAttribute('data-actual-width', this.naturalWidth);
-				slide.setAttribute('data-actual-height', this.naturalHeight);
+				slide.setAttribute('data-actual-width', '100%');	//Makes image not resize page
+				// slide.setAttribute('data-actual-width', this.naturalWidth);
+				// slide.setAttribute('data-actual-height', this.naturalHeight);
 				if (typeof(callback) === 'function') callback(this);
 			};
 		}
@@ -401,10 +402,13 @@ var IdealImageSlider = (function() {
 		this.settings = {
 			selector: '',
 			height: 'auto', // "auto" | px value (e.g. 400) | aspect ratio (e.g. "16:9")
-			initialHeight: 400, // for "auto" and aspect ratio
-			maxHeight: null, // for "auto" and aspect ratio
+			// initialHeight: 400, // for "auto" and aspect ratio
+			// maxHeight: null, // for "auto" and aspect ratio
+			initialHeight: 500,
+			maxHeight: 500, 
 			interval: 4000,
-			transitionDuration: 700,
+			// transitionDuration: 700,
+			transitionDuration: 1000,
 			effect: 'slide',
 			disableNav: false,
 			keyboardNav: true,

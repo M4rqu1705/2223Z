@@ -33,58 +33,59 @@
 	</head>
 	<body>
 		<!--================================================== Header ==================================================-->
-		    <header class="w3-bar w3-white-text w3-gray-bg">
-        <div class="w3-bar-item w3-mobile"> <h1><span class="highlight">2223-Z</span></h1> </div>
-        <nav class="w3-bar-item w3-mobile">
-          <ul class="w3-bar-item w3-mobile">
-			<div onclick="clickableDropdown()" class="w3-bar-item w3-mobile w3-dropdown-click w3-right w3-gray-bg">
-				<div class="w3-white-text w3-hover-red-text fa fa-bars"></div>
-					<div id="navDropdown" class="w3-dropdown-content w3-bar-block w3-card-4 w3-white-bg w3-center w3-animate-opacity" style="right:0; margin-top:25px;">
-						<a href="index.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class=" fa fa-home w3-large"></span> Home</li></a>
+  </head>
+	<body>
+		<header class="w3-bar w3-white-text w3-gray-bg">
+			<div id="titleOfPage" class="w3-bar-item w3-mobile"></div>
+			<nav class="w3-bar-item w3-mobile">
+			  <ul class="w3-bar-item w3-mobile ">
+				<div onclick="clickableDropdown()" class="w3-bar-item w3-dropdown-click w3-right w3-mobile w3-gray-bg w3-hover-gray-bg">
+					<div id="menuButton" class="w3-white-text w3-hover-red-text w3-hover-gray-bg fa fa-bars"></div>
+					<div id="navDropdown" class="w3-dropdown-content w3-bar-block w3-card-4 w3-white-bg w3-center w3-animate-opacity" style="right:0; margin-top:25px;z-index:30;">
+						<a href="index.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-red-text"><span class=" fa fa-home w3-large"></span> Home</li></a>
 						<a href="aboutUs.html" class="navBarItem"><li id="navLiItem"class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-user w3-large"></span> About Us</li></a>
-						<a href="gallery.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-red-text"><span class="fa fa-image w3-large"></span> Gallery</li></a>
+						<a href="gallery.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-image w3-large"></span> Gallery</li></a>
 						<a href="engineeringNotebook.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-book w3-large"></span> Engineering Notebook</li></a>
 						<a href="contactUs.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-address-book w3-large"></span> Contact Us</li></a>
 						<a href="sponsors.html" class="navBarItem"><li id="navLiItem" class="w3-bar-item w3-dropdown-click w3-hover-red-text"><span class="fa fa-group w3-large"></span> Sponsors</li></a>
 					</div>
 				</div>
-          </ul>
-        </nav>
-    </header>
+			  </ul>
+			</nav>
+		</header>
 
 		<!--================================================== Content ==================================================-->
-		<section class="w3-center" style="width:100%; margin:0 auto;">
+		<section id="galleryContent" class="w3-card-4">
 			<!--================================================== Image Slider ==================================================-->
-			<div id="slider">
-			
+			<div id="slider"">
 				<!--Repeat the code starting here to add a photo-->
 				<img data-src="./images/Cono.png" data-src-2x="./images/Cono.png"/>				
 				<!--Repeat the code ending here to add a photo-->
-				<img data-src="./images/teamLogo.jpeg" data-src-2x="./images/teamLogo.jpeg"/>s
+				<img data-src="./images/teamLogo.png" data-src-2x="./images/teamLogo.png"/>
 			</div>
-			<script src="./js/ideal-image-slider.js"></script> <script> var slider = new IdealImageSlider.Slider('#slider'); slider.addCaptions(); slider.start(); </script>
+			<script src="./js/ideal-image-slider.js"></script> <script> var slider = new IdealImageSlider.Slider('#slider'); slider.start(); </script>
 	
 			<!--================================================== Welcome Message ==================================================-->
-			<div style="margin: 0px 20px 20px 20px;font-size:20px; text-align:center;">
-				<p><span class="w3-xxl">Hello and welcome to 2223-Z's photo gallery!</span> <br>In here you will find the latest team and robot photos</p>
+			<div id="galleryWelcome">
+				<p><span id="welcomeMessage">Hello and welcome to <span class="highlight">2223-Z</span>'s photo gallery!</span> <br>In here you will find the latest team and robot photos</p>
 			</div>
+		</section>	
 			
-			
-			<section id="boxes" class="w3-row w3-mobile w3-black-text w3-center w3-clear">
-				<!--Repeat the code starting here to add an image-->
-				<div class="box w3-col l4 m6 s12 w3-mobile">
-					<img src="./images/uhsLogo.png">
-				  <h3>Model 1</h3>
-				</div>
-				<!--Repeat the code ending here to add an image-->
-				<div class="box w3-col l4 m6 s12 w3-mobile">
-					<img src="./images/uprrpLogo.png">
-					<h3>Model 1</h3>
-				</div>
-				<div class="box w3-col l4 m6 s12 w3-mobile">
-					<img src="./images/uhsRobotics.png">
-					<h3>Model 1</h3>
-				</div>
-			</section>
+		<section id="boxes" class="w3-row w3-mobile w3-black-text w3-center w3-clear">
+			<!--Repeat the code starting here to add an image-->
+			<div class="box w3-col l4 m6 s12 w3-mobile">
+				<img src="./images/uhsLogo.png">
+			  <h3>Model 1</h3>
+			</div>
+			<!--Repeat the code ending here to add an image-->
+			<div class="box w3-col l4 m6 s12 w3-mobile">
+				<img src="./images/uprrpLogo.png">
+				<h3>Model 1</h3>
+			</div>
+			<div class="box w3-col l4 m6 s12 w3-mobile">
+				<img src="./images/uhsRobotics.png">
+				<h3>Model 1</h3>
+			</div>
+		</section>
 	</body>
 </html>
