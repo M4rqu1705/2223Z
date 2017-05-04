@@ -23,7 +23,7 @@
 	optgroup{ font-weight: bold;} table{ border-collapse: collapse; border-spacing: 0;} td, th{padding: 0;}
 	/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /** Header *********************/
-	header{ border-bottom: 3px solid #f00; width:100%;}
+	header{ border-bottom: 3px solid #f00; width:100%; z-index:21;}
 	.navBarItem{ text-decoration:none;}
 /** index.html **********************/
 	@-ms-viewport{ width: device-width;}
@@ -42,15 +42,18 @@
 /* Small Screen Stylings *********************/@media only screen and (min-width:200px) and (max-width:600px){
 /** Header *********************/
 	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat center center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px auto;}
-	header nav{padding:0px; margin:0px;}
-	header nav ul{padding:0px; margin:0px;}
-	header nav ul div{padding:0px 0px 10px 0px; margin:0px;}
-	#navDropdown{ width:90%; margin-top:34px; margin:auto;}
-	#navLiItem{ height:34px; width:250px; overflow:hidden; margin:auto;}
-	
+	header nav{padding:0px!important; margin:0px!important;}
+	header nav ul{padding:0px!important; margin:0px!important;}
+	header nav ul div{padding:0px 0px 0px 0px!important; margin:0px 0px 10px 0px!important;}
+	#navDropdown{ width:90%; margin-top:34px; margin:auto!important;}
+	#makePageOpaque {width:0px; height: 0px; filter:alpha(opacity=0); -moz-opacity:0; opacity: 0;}
+	.navBarItem { height: 34px; width: 100%;}
+	#navLiItem{ width:100%; height: 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); overflow:hidden; margin:auto;}
+	#cardFront{position:relative; top:10px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
+	#cardBack{position:relative; top:-38px; left:10px; height:35px; width:100%;  margin:auto; padding:0px; overflow:hidden;}
 /** index.html **********************/
 /*** Introduction ********************/
-	#introduction{ height:197px; background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px; padding: 0px;}
+	#introduction{ height:197px; background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin: 136px 0px 0px 0px; padding: 0px;}
 	#introduction img{ margin-top:0px; width:20%;}
 /*** Content ********************/
 	#content{ width:100%; padding: 15px; margin:0px;} 
@@ -72,10 +75,15 @@
 	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
 	header nav ul{padding:0px!important; margin:0px!important;}
 	header nav ul div{padding:0px!important; margin:0px!important;}
-	#navDropdown{ width:40%; margin-top:46px!important;}
-	#navLiItem{ height:34px; width:100%; overflow:hidden; margin:auto;}
+	#navDropdown{ width:100%;  height: 86.5%; margin-top:103px!important; background-color:rgba(0,0,0,0)}
+	#makePageOpaque {width:80%; height: 100%; background-color:#000;filter:alpha(opacity=0.5); -moz-opacity:0.5; opacity: 0.5; z-index:-1; float:left;}
+	#navDropdownContent{width:20%; height: 100%; float:right;}
+	.navBarItem { height: 34px; width: 100%;}
+	#navLiItem{ width:100%; height: 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); margin:auto;}
+	#cardFront{position:relative; top:10px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
+	#cardBack{position:relative; top:-27px; left:10px; height:35px; width:100%;  margin:auto; padding:0px; overflow:hidden;}
 /** index.html **********************/
-	#introduction{background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px; padding: 0px;}
+	#introduction{margin-top:103px!important; background: #f4f4f4 url("../images/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px; padding: 0px;}
 	#introduction img{ margin-top:0px; width:20%;}
 /*** Introduction ********************/
 /*** Content ********************/
@@ -98,11 +106,17 @@
 	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
 	header nav ul{padding:0px!important; margin:0px!important;}
 	header nav ul div{padding:0px!important; margin:0px!important;}
-	#navDropdown{ width:20%; margin-top:46px!important;}
-	#navLiItem{ height:34px; width:50px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; overflow:hidden; margin:auto;}
-	#navLiItem:hover{width:100%;}
+	#navDropdown{ width:100%;  height: 86.5%; margin-top:103px!important; background-color:rgba(0,0,0,0)}
+	#makePageOpaque {width:80%; height: 100%; background-color:#000;filter:alpha(opacity=0.5); -moz-opacity:0.5; opacity: 0.5; z-index:-1; float:left;}
+	#navDropdownContent{width:20%; height: 100%; float:right;}
+	.navBarItem { height: 34px; width: 100%; perspective:800px;}
+	#navLiItem{ width:100%; height: 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); transform-style:preserve-3d; -webkit-transition: transform .5s; transition: transform .5s; margin:auto;}
+	#navLiItem:hover { -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg);} 
+	#cardFront{position:absolute; top:15px; left:0px; height:100%; width:100%; -webkit-backface-visibility: hidden; backface-visibility: hidden;}
+	#cardBack{ position:absolute; top:15px; left:0px; height:100%; width:100%; -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); -webkit-backface-visibility: hidden; backface-visibility: hidden; margin:auto; padding:0px;}
 /** index.html **********************/
 /*** Introduction ********************/
+	#introduction{margin-top:103px!important;}
 /*** Content ********************/
 	#content{ width:872px; padding: 15px; margin:0px auto;} 
 	#welcomeMessage{font-size:50px;}
@@ -163,53 +177,13 @@
 <head>
 <style>
 
-.card-wrapper {
-	height: 100px;
-	width: 150px;
-	perspective:800px;
-}
+.navBarItem { height: 34px; width: 100%; perspective:800px;}
+#navLiItem{ width:100%; height: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); transform-style:preserve-3d; -webkit-transition: transform .5s; transition: transform .5s;}
+#navLiItem:hover { -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg);} 
+#front{ height:100%; width:100%; -webkit-backface-visibility: hidden; backface-visibility: hidden;}
+#back{ height:100%; width:100%; -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); -webkit-backface-visibility: hidden; backface-visibility: hidden;}
 
-.card{
-	width:100%;
-	height: 100%;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5);
 
-	transform-style:preserve-3d;
-
-	-webkit-transition: transform .5s;
-	transition: transform .5s;
-}
-
-.front{
-	position: absolute;
-	height:100%;
-	width:100%;
-    
-    top:25%;
-    left:15%;
-
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.back{
-	position: absolute;
-	height:100%;
-	width:100%;
-
-	-ms-transform: rotateY(-180deg);
-   	-webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-	
-	-webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.card:hover {
-	-ms-transform: rotateY(-180deg);
-   	-webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-}
 </style>
 </head>
 <body>
