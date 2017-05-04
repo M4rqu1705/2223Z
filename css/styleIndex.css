@@ -41,15 +41,15 @@
 /*======================================================================================================================================================================================================================*/
 /* Small Screen Stylings *********************/@media only screen and (min-width:200px) and (max-width:600px){
 /** Header *********************/
-	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat center center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px auto;}
-	header nav{padding:0px!important; margin:0px!important;}
+	#titleOfPage{background: #35424a url("../images/smallTeamLogo.png") no-repeat center center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px auto 0px auto;}
+	header nav{padding:0px!important; margin:30px auto 0px auto!important;}
 	header nav ul{padding:0px!important; margin:0px!important;}
-	header nav ul div{padding:0px 0px 0px 0px!important; margin:0px 0px 10px 0px!important;}
+	header nav ul div{padding:0px!important; margin:0px 0px 10px 0px!important;}
 	#navDropdown{ width:90%; margin-top:34px; margin:auto!important;}
 	#makePageOpaque {width:0px; height: 0px; filter:alpha(opacity=0); -moz-opacity:0; opacity: 0;}
 	.navBarItem { height: 34px; width: 100%;}
 	#navLiItem{ width:100%; height: 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); overflow:hidden; margin:auto;}
-	#cardFront{position:relative; top:10px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
+	#cardFront{position:relative; top:7px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
 	#cardBack{position:relative; top:-38px; left:10px; height:35px; width:100%;  margin:auto; padding:0px; overflow:hidden;}
 /** index.html **********************/
 /*** Introduction ********************/
@@ -72,7 +72,7 @@
 /* Medium Screen Stylingss *********************/@media only screen and (min-width:601px) and (max-width:899px){
 /** Header *********************/
 	#titleOfPage{background: #35424a url("../images/teamLogoNoBorders.png") no-repeat left top; background-size:82px 100px;  width:82px; height:100px; padding:0px; margin:0px;}
-	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
+	header nav{padding:0px!important; margin:40px 40px 0px 0px!important; float:right!important;}
 	header nav ul{padding:0px!important; margin:0px!important;}
 	header nav ul div{padding:0px!important; margin:0px!important;}
 	#navDropdown{ width:100%;  height: 90%; margin-top:103px!important; background-color:rgba(0,0,0,0)}
