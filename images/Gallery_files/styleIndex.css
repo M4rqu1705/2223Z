@@ -39,11 +39,10 @@
 	#boxes .box img{ width:150px; height:150px;}
 /** gallery.html *********************/
 /*** Image Slider *******************/
-#sliderContainer{width:100%; margin:103px 0px 55px 0px!important; max-width:872px; margin:0px auto; background-color:#000;}
-#imagePreviewContainer{width:100%;border-top: 2px solid #f00;}
-#imagePreviewContainer div{margin:0px auto!important; background-color:#35424a;}
-.slide {max-height:583px; max-width:872px; overflow:hidden;}
-.imagePreview {cursor:pointer; max-height:55px; padding:0px auto!important; overflow:hidden; background-color:#ff0;}
+#sliderContainer{width:100%; margin:103px 0px 103px 0px!important; max-width:872px; max-height:581px; margin:0px auto; background-color:#000;}
+#imagePreviewContainer{width:100%; margin: 0px auto!important;}
+.slide {max-height:581px; max-width:872px; overflow:hidden;}
+.imagePreview {cursor:pointer; max-height:55px; margin:0px auto!important; overflow:hidden;}
 
 /*======================================================================================================================================================================================================================*/
 /* Small Screen Stylings *********************/@media only screen and (min-width:200px) and (max-width:600px){
@@ -108,8 +107,8 @@
 	#galleryWelcome{font-size:20px; text-align:center; padding:30px;}
 	#galleryWelcome p{ padding:0px; margin:0px;}
 /*** Slider **************************/
-	#sliderContainer{width:100%; height:auto; padding:0px!important;}
-	.slide{width:100%; height:auto; margin:0px!important; padding:0px!important;}
+	#sliderContainer{width:100%; padding:0px!important;}
+	.slide{width:100%; margin:0px!important; padding:0px!important;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Large Screen Stylings *********************/@media only screen and (min-width:900px){
@@ -141,8 +140,8 @@
 	#galleryWelcome{font-size:20px; text-align:center; padding:45px;}
 	#galleryWelcome p{ padding:0px; margin:0px;}
 /*** Slider **************************/
-	#sliderContainer{width:872px; height:auto;}
-	.slide{width:872px; height:auto; margin:0px;}
+	#sliderContainer{width:872px; height:581px;}
+	.slide{width:872px; height:581px; margin:0px;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Other Specific Stylings ********************/
@@ -181,3 +180,48 @@
 .w3-hover-gray-bg:hover{ background-color:#35424a!important;}
 .w3-hover-black-bg:hover{ background-color:#000!important;}
 .w3-hover-white-bg:hover{ background-color:#f4f4f4!important;}
+
+
+
+/*Code for flipping cards
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.navBarItem { height: 34px; width: 100%; perspective:800px;}
+#navLiItem{ width:100%; height: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); transform-style:preserve-3d; -webkit-transition: transform .5s; transition: transform .5s;}
+#navLiItem:hover { -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg);} 
+#front{ height:100%; width:100%; -webkit-backface-visibility: hidden; backface-visibility: hidden;}
+#back{ height:100%; width:100%; -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); -webkit-backface-visibility: hidden; backface-visibility: hidden;}
+
+
+</style>
+</head>
+<body>
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="front">
+        La cara de Nim
+      </div>
+      <div class="back">
+        La cara de Paco
+      </div>
+    </div>
+  </div>
+    <div class="card-wrapper">
+    <div class="card">
+      <div class="front">
+        La cara de Nimgat
+      </div>
+      <div class="back">
+        La cara de ningato
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+*/
