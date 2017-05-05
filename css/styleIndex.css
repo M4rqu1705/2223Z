@@ -93,10 +93,10 @@
 	#navDropdown{ width:100%;  height: 90%; margin-top:103px!important; background-color:rgba(0,0,0,0)}
 	#makePageOpaque {width:75%; height: 100%; background-color:#000;filter:alpha(opacity=0.5); -moz-opacity:0.5; opacity: 0.5; z-indfile:///C:/Users/marco/Desktop/2223Z%20website/images/Cono.pngex:-1; float:left;}
 	#navDropdownContent{width:25%; height: 100%; float:right;}
-	.navBarItem { height: 34px; width: 100%;}
-	#navLiItem{ width:100%; height: 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); margin:auto;}
-	#cardFront{position:relative; top:8px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
-	#cardBack{position:relative; top:-27px; left:10px; height:35px; width:100%;  margin:auto; padding:0px; overflow:hidden;}
+	.navBarItem { height: 40px; width: 100%;}
+	#navLiItem{ width:100%; height: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); margin:auto;}
+	#cardFront{position:relative; top:1px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
+	#cardBack{position:relative; top:-35px; left:10px; height:35px; width:100%;  margin:auto; padding:0px; overflow:hidden;}
 /** index.html **********************/
 	#introduction{margin-top:103px!important; background: #f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px; padding: 0px;}
 	#introduction img{ margin-top:0px; width:20%;}
