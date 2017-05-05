@@ -24,6 +24,11 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /** Header *********************/
 	header{ border-bottom: 3px solid #f00; width:100%; z-index:30!important;}
+	#navDropdownContent{overflow-y: scroll; overflow-x: hidden; }
+	::-webkit-scrollbar {
+		width: 0px;  /* remove scrollbar space */
+		background: transparent;  /* optional: just make scrollbar invisible */
+	}
 	.navBarItem{ text-decoration:none;}
 /** index.html **********************/
 	@-ms-viewport{ width: device-width;}
