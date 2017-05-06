@@ -1,188 +1,197 @@
 /* Universal Stylings **********************/
 /** Just in case compatibility problems *********************-
 	/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-	html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
-	article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block;}
-	audio, canvas, progress, video { display: inline-block; vertical-align: baseline;}
-	audio:not([controls]){ display: none; height: 0;} [hidden], template{ display: none;} a{ background: transparent;} a:active, a:hover{ outline: 0;}
-	abbr[title]{ border-bottom: 1px dotted;} b, strong{ font-weight: bold;} dfn{  font-style: italic;} h1{ font-size: 2em; margin: 0.67em 0;}
-	mark{ background: #ff0; color: #000;} small{ font-size: 80%;}
-	sub,sup{ font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;} sup{ top: -0.5em;} sub{ bottom: -0.25em;}
-	img{ border: 0;} svg:not(:root){ overflow: hidden;} figure{ margin: 1em 40px;}
-	hr{-moz-box-sizing: content-box; box-sizing: content-box; height: 0;} pre{overflow: auto;}
-	code, kbd, pre, samp{ font-family: monospace, monospace; font-size: 1em;}
-	button, input, optgroup, select, textarea{ color: inherit; font: inherit; margin: 0;} button{ overflow: visible;}
-	button, select{ text-transform: none;}
-	button, html input[type="button"], input[type="reset"],input[type="submit"]{ -webkit-appearance: button; cursor: pointer;}
-	button[disabled],html input[disabled]{ cursor: default;} button::-moz-focus-inner, input::-moz-focus-inner{border: 0; padding: 0;}
-	input{ line-height: normal;} input[type="checkbox"], input[type="radio"]{ box-sizing: border-box; padding: 0;}
-	input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{height: auto;}
-	input[type="search"]{ -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}
-	input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
-	fieldset{ border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em;} legend{ border: 0; padding: 0;} textarea{ overflow: auto;}
-	optgroup{ font-weight: bold;} table{ border-collapse: collapse; border-spacing: 0;} td, th{padding: 0;}
+	html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}audio:not([controls]){display:none;height:0;}[hidden],template{display:none;}a{background:transparent;}a:active,a:hover{outline:0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}h1{font-size:2em;margin:.67em 0;}mark{background:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:1em 40px;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}pre{overflow:auto;}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em;}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}button{overflow:visible;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}input{line-height:normal;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em;}legend{border:0;padding:0;}textarea{overflow:auto;}optgroup{font-weight:bold;}table{border-collapse:collapse;border-spacing:0;}td,th{padding:0;}
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /** Header *********************/
-	header{ border-bottom: 3px solid #f00; width:100%; z-index:30!important;}
-	#navDropdownContent{overflow-y: scroll; overflow-x: hidden; }
-	::-webkit-scrollbar {
-		width: 0px;  /* remove scrollbar space */
-		background: transparent;  /* optional: just make scrollbar invisible */
-	}
-	.navBarItem{ text-decoration:none;}
+	header{border-bottom:3px solid #f00;width:100%;z-index:30!important;}
+	#navDropdownContent{overflow-y:scroll;overflow-x:hidden;}
+	::-webkit-scrollbar{width:0;/* remove scrollbar space */background:transparent;/* optional: just make scrollbar invisible */}
+	.navBarItem{text-decoration:none;}
 /** index.html **********************/
-	@-ms-viewport{ width: device-width;}
-	body{ width:100%; padding:0; margin:0; font: 15px/1.5 Arial, Helvetica, sans-serif; background-color:#f4f4f4;}
-	ul{ margin:0; padding:0;}
-	.highlight{ color:#ff0000; font-weight:bold;}
+	@-ms-viewport{width:device-width;}
+	body{width:100%;padding:0;margin:0;font:15px/1.5 Arial, Helvetica, sans-serif;background-color:#f4f4f4;}
+	ul{margin:0;padding:0;}
+	.highlight{color:#ff0000;font-weight:bold;}
+	.tab0{padding-left:2em;}.tab1{padding-left:4em;}.tab2{padding-left:8em;}.tab3{padding-left:12em;}.tab4{padding-left:16em;}.tab5{padding-left:20em;}.tab6{padding-left:24em;}.tab7{padding-left:28em;}.tab8{padding-left:32em;}.tab9{padding-left:36em;}.tab10{padding-left:40em;}.tab11{padding-left:44em;}.tab12{padding-left:48em;}.tab13{padding-left:52em;}.tab14{padding-left:56em;}.tab15{padding-left:60em;}.tab16{padding-left:64em;}
 /*** Introduction ********************/
 /*** Content ********************/
 /*** Boxes ********************/
-	#boxes{ margin-top:50px; width:100%;}
-	#boxes .box{ text-align: center; padding:10px;}
-	#boxes .box h3{ font-size:18px;}
-	#boxes .box img{ width:150px; height:150px;}
+	#boxes{margin-top:50px;width:100%;}
+	#boxes .box{text-align:center;padding:10px;}
+	#boxes .box h3{font-size:18px;}
+	#boxes .box img{width:150px;height:150px;}
+/** aboutUs.html **********************/
+/*** userContainer ********************/
+	.teamMateDropdown{margin-top:50px;width:100%;}
+	.teamMateDropdown img{width:90%!important;height:auto;padding:0 0 -5px;margin:0 0 -6px;}
+	.teamMateDropdown p{width:90%;margin:0 auto!important;padding:0;font-size:30px!important;}
+	#jorgeContainer{width:100%;padding:15px;margin:0 auto!important;text-align:left;}
+	#alanisContainer{width:100%;padding:15px;margin:0 auto!important;text-align:left;}
+	#danielaContainer{width:100%;padding:15px;margin:0 auto!important;text-align:left;}
+	#marcosContainer{width:100%;padding:15px;margin:0 auto!important;text-align:left;}
 /** gallery.html *********************/
 /*** Image Slider *******************/
-#sliderContainer{width:100%; max-width:872px; margin:0px auto; background-color:#000;}
-#imagePreviewContainer{width:100%;border-top: 2px solid #f00;}
-#imagePreviewContainer div{margin:0px auto!important; background-color:#35424a;}
-.slide {max-height:583px; max-width:872px; overflow:hidden;}
-.imagePreview {cursor:pointer; max-height:55px; padding:0px auto!important; overflow:hidden; background-color:#000;}
+	#sliderContainer{width:100%;max-width:872px;margin:0 auto;background-color:#000;}
+	#imagePreviewContainer{width:100%;border-top:2px solid #f00;}
+	#imagePreviewContainer div{margin:0 auto!important;background-color:#35424a;}
+	.slide{max-height:583px;max-width:872px;overflow:hidden;}
+	.imagePreview{cursor:pointer;max-height:55px;padding:0 auto!important;overflow:hidden;background-color:#000;}
 
 /*======================================================================================================================================================================================================================*/
 /* Small Screen Stylings *********************/@media only screen and (min-width:200px) and (max-width:600px){
 /** Header *********************/
-	#titleOfPage{background: #35424a url("../images/navBar Photos/smallTeamLogo.png") no-repeat center center; background-size:150px 35px; width:150px; height:35px; padding:0px; margin:30px auto 0px auto;}
-	header nav{padding:0px!important; margin:30px auto 0px auto!important;}
-	header nav ul{padding:0px!important; margin:0px!important;}
-	header nav ul div{padding:0px!important; margin:0px 0px 10px 0px!important;}
-	#navDropdown{ width:90%; margin-top:34px; margin:auto!important;}
-	#makePageOpaque {width:0px; height: 0px; filter:alpha(opacity=0); -moz-opacity:0; opacity: 0;}
-	.navBarItem { height: 34px; width: 100%;}
-	#navLiItem{ width:100%; height: 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); overflow:hidden; margin:auto;}
-	#cardFront{position:relative; top:7px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
-	#cardBack{position:relative; top:-38px; left:10px; height:35px; width:100%;  margin:auto; padding:0px; overflow:hidden;}
+	#titleOfPage{background:#35424a url("../images/navBar Photos/smallTeamLogo.png") no-repeat center center;background-size:150px 35px;width:150px;height:35px;padding:0;margin:30px auto 0;}
+	header nav{padding:0!important;margin:30px auto 0!important;}
+	header nav ul{padding:0!important;margin:0!important;}
+	header nav ul div{padding:0!important;margin:0 0 10px!important;}
+	#navDropdown{width:90%;margin-top:34px;margin:auto!important;}
+	#makePageOpaque{width:0;height:0;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+	.navBarItem{height:34px;width:100%;}
+	#navLiItem{width:100%;height:50px;box-shadow:0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5);overflow:hidden;margin:auto;}
+	#cardFront{position:relative;top:7px;left:-45px;height:35px;width:100%;margin:auto;padding:0;}
+	#cardBack{position:relative;top:-38px;left:15px;height:35px;width:100%;margin:auto;padding:0;overflow:hidden;}
 /** index.html **********************/
 /*** Introduction ********************/
-	#introduction{ height:197px; background: #f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top; background-size:100%; margin: 136px 0px 0px 0px; padding: 0px;}
-	#introduction img{ margin-top:0px; width:20%;}
+	#introduction{background:#f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top;background-size:100%;margin:136px 0 0;padding:0;}
+	#introduction img{margin-top:0;width:20%;}
 /*** Content ********************/
-	#content{ width:100%; padding: 15px; margin:0px;} 
+	#content{width:100%;padding:15px;margin:0;}
 	#welcomeMessage{font-size:25px;}
-	#content p{ margin:0px; padding:0px;}
-	#content p ol{ float:left; font-size:1000px;}
+	#content p{margin:0;padding:0;}
+	#content p ol{float:left;font-size:1000px;}
 /*** Boxes ********************/
 /** gallery.html ******************/
 /*** Gallery Content ****************/
-	#galleryContent{ width:100%; margin:0px;}
-	#galleryWelcome{font-size:20px; text-align:center; padding:20px;}
-	#galleryWelcome p{ padding:0px; margin:0px;}
+	#galleryContent{width:100%;margin:0;}
+	#galleryWelcome{font-size:20px;text-align:center;padding:20px;}
+	#galleryWelcome p{padding:0;margin:0;}
 /*** Slider **************************/
-	#sliderContainer{width:100%; padding:0px!important;margin:136px 0px 0px 0px!important;}
-	.slide{width:100%; margin:0px!important; padding:0px!important;}
-	.imagePreview{margin:0px auto!important;}
+	#sliderContainer{width:100%;padding:0!important;margin:136px 0 0!important;}
+	.slide{width:100%;margin:0!important;padding:0!important;}
+	.imagePreview{margin:0 auto!important;}
+/**aboutUs.html ************************/
+/*** Content *****************************/
+	#aboutUsContent{width:100%;padding:15px;margin:136px auto 0;}
+	#aboutUsWelcomeMessage{font-size:20px;}
+	#aboutUsContent p{margin:0;padding:0;font-size:15px;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Medium Screen Stylingss *********************/@media only screen and (min-width:601px) and (max-width:899px){
 /** Header *********************/
-	#titleOfPage{background: #35424a url("../images/navBar Photos/teamLogoNoBorders.png") no-repeat left top; background-size:82px 100px;  width:82px; height:100px; padding:0px; margin:0px;}
-	header nav{padding:0px!important; margin:40px 40px 0px 0px!important; float:right!important;}
-	header nav ul{padding:0px!important; margin:0px!important;}
-	header nav ul div{padding:0px!important; margin:0px!important;}
-	#navDropdown{ width:100%;  height: 90%; margin-top:103px!important; background-color:rgba(0,0,0,0)}
-	#makePageOpaque {width:75%; height: 100%; background-color:#000;filter:alpha(opacity=0.5); -moz-opacity:0.5; opacity: 0.5; z-indfile:///C:/Users/marco/Desktop/2223Z%20website/images/Cono.pngex:-1; float:left;}
-	#navDropdownContent{width:25%; height: 100%; float:right;}
-	.navBarItem { height: 40px; width: 100%;}
-	#navLiItem{ width:100%; height: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); margin:auto;}
-	#cardFront{position:relative; top:1px; left:-45px; height:35px; width:100%;  margin:auto; padding:0px;}
-	#cardBack{position:relative; top:-35px; left:10px; height:35px; width:100%;  margin:auto; padding:0px; overflow:hidden;}
+	#titleOfPage{background:#35424a url("../images/navBar Photos/teamLogoNoBorders.png") no-repeat left top;background-size:82px 100px;width:82px;height:100px;padding:0;margin:0;}
+	header nav{padding:0!important;margin:40px 40px 0 0!important;float:right!important;}
+	header nav ul{padding:0!important;margin:0!important;}
+	header nav ul div{padding:0!important;margin:0!important;}
+	#navDropdown{width:100%;height:90%;margin-top:103px!important;background-color:rgba(0,0,0,0);}
+	#makePageOpaque{width:75%;height:100%;background-color:#000;filter:alpha(opacity=0.5);-moz-opacity:0.5;opacity:0.5;float:left;}
+	#navDropdownContent{width:25%;height:100%;float:right;}
+	.navBarItem{height:40px;width:100%;}
+	#navLiItem{width:100%;height:40px;box-shadow:0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5);margin:auto;}
+	#cardFront{position:relative;top:0;left:-45px;height:35px;width:100%;margin:auto;padding:0;}
+	#cardBack{position:relative;top:-35px;left:15px;height:35px;width:100%;margin:auto;padding:0;overflow:hidden;}
 /** index.html **********************/
-	#introduction{margin-top:103px!important; background: #f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top; background-size:100%; margin:0px; padding: 0px;}
-	#introduction img{ margin-top:0px; width:20%;}
+	#introduction{margin-top:103px!important;background:#f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top;background-size:100% auto; height:auto; margin:0;padding:0;}
+	#introduction img{margin-top:0;width:20%;}
 /*** Introduction ********************/
 /*** Content ********************/
-	#content{ width:100%; padding: 15px; margin:0px;} 
+	#content{width:100%;padding:15px;margin:0;}
 	#welcomeMessage{font-size:35px;}
-	#content p{ margin:0px; padding:0px;}
-	#content p ol{ float:left;}
+	#content p{margin:0;padding:0;}
+	#content p ol{float:left;}
 /*** Boxes ********************/
 /** gallery.html ******************/
 /*** Gallery Content ****************/
-	#galleryContent{ width:100%; margin:0px;}
-	#galleryWelcome{font-size:20px; text-align:center; padding:30px;}
-	#galleryWelcome p{ padding:0px; margin:0px;}
+	#galleryContent{width:100%;margin:0;}
+	#galleryWelcome{font-size:20px;text-align:center;padding:30px;}
+	#galleryWelcome p{padding:0;margin:0;}
 /*** Slider **************************/
-	#sliderContainer{width:100%; height:auto; padding:0px!important; margin:103px 0px 55px 0px!important;}
-	.slide{width:100%; height:auto; margin:0px!important; padding:0px!important;}
+	#sliderContainer{width:100%;height:auto;padding:0!important;margin:103px 0 55px!important;}
+	.slide{width:100%;height:auto;margin:0!important;padding:0!important;}
+/**aboutUs.html ************************/
+/*** Content *****************************/
+	#aboutUsContent{width:100%;padding:15px;margin:103px auto 0;}
+	#aboutUsWelcomeMessage{font-size:33px;}
+	#aboutUsContent p{margin:0;padding:0;font-size:25px;}
+	#jorgeContainer{z-index:20;}#alanisContainer{z-index:20;}#danielaContainer{z-index:20;}#marcosContainer{z-index:20;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Large Screen Stylings *********************/@media only screen and (min-width:900px){
 /** Header *********************/
-	#titleOfPage{background: #35424a url("../images/navBar Photos/teamLogoNoBorders.png") no-repeat left top; background-size:82px 100px;  width:82px; height:100px; padding:0px; margin:0px;}
-	header nav{padding:0px!important; margin:35px 35px 0px 0px!important; float:right!important;}
-	header nav ul{padding:0px!important; margin:0px!important;}
-	header nav ul div{padding:0px!important; margin:0px!important;}
-	#navDropdown{ width:100%;  height: 86.5%; margin-top:103px!important; background-color:rgba(0,0,0,0)}
-	#makePageOpaque {width:80%; height: 100%; background-color:#000;filter:alpha(opacity=0.5); -moz-opacity:0.5; opacity: 0.5; z-index:-1; float:left;}
-	#navDropdownContent{width:20%; height: 100%; float:right;}
-	.navBarItem { height: 34px; width: 100%; perspective:800px;}
-	#navLiItem{ width:100%; height: 50px; box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5); transform-style:preserve-3d; -webkit-transition: transform .5s; transition: transform .5s; margin:auto;}
-	#navLiItem:hover { -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg);} 
-	#cardFront{position:absolute; top:15px; left:0px; height:100%; width:100%; -webkit-backface-visibility: hidden; backface-visibility: hidden;}
-	#cardBack{ position:absolute; top:15px; left:0px; height:100%; width:100%; -ms-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); -webkit-backface-visibility: hidden; backface-visibility: hidden; margin:auto; padding:0px;}
+	#titleOfPage{background:#35424a url("../images/navBar Photos/teamLogoNoBorders.png") no-repeat left top;background-size:82px 100px;width:82px;height:100px;padding:0;margin:0;}
+	header nav{padding:0!important;margin:35px 35px 0 0!important;float:right!important;}
+	header nav ul{padding:0!important;margin:0!important;}
+	header nav ul div{padding:0!important;margin:0!important;}
+	#navDropdown{width:100%;height:86.5%;margin-top:103px!important;background-color:rgba(0,0,0,0);}
+	#makePageOpaque{width:80%;height:100%;background-color:#000;filter:alpha(opacity=0.5);-moz-opacity:0.5;opacity:0.5;float:left;}
+	#navDropdownContent{width:20%;height:100%;float:right;}
+	.navBarItem{height:34px;width:100%;perspective:800px;}
+	#navLiItem{width:100%;height:50px;box-shadow:0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.5);transform-style:preserve-3d;-webkit-transition:transform .5s;transition:transform .5s;margin:auto;}
+	#navLiItem:hover{-ms-transform:rotateY(-180deg);-webkit-transform:rotateY(-180deg);transform:rotateY(-180deg);}
+	#cardFront{position:absolute;top:15px;left:0;height:100%;width:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+	#cardBack{position:absolute;top:15px;left:0;height:100%;width:100%;-ms-transform:rotateY(-180deg);-webkit-transform:rotateY(-180deg);transform:rotateY(-180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden;margin:auto;padding:0;}
 /** index.html **********************/
 /*** Introduction ********************/
-	#introduction{margin-top:103px!important;}
+	#introduction{margin-top:103px!important;background:#f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top;background-size:872px 490.5px; height:490.5px; margin:0;padding:0;}
+	#introduction img{margin-top:0;width:174px;height:135px;}
 /*** Content ********************/
-	#content{ width:872px; padding: 15px; margin:0px auto;} 
+	#content{width:872px;padding:15px;margin:0 auto;}
 	#welcomeMessage{font-size:50px;}
-	#content p{ margin:0px; padding:0px; font-size:30px;}
-	#listOfAvalableThings{ font-size:17px}
+	#content p{margin:0;padding:0;font-size:30px;}
+	#listOfAvalableThings{font-size:17px;}
 /*** Boxes ********************/
 /** gallery.html ******************/
 /*** Gallery Content ****************/
-	#galleryContent{ width:872px; margin:0px auto;}
-	#galleryWelcome{font-size:20px; text-align:center; padding:45px;}
-	#galleryWelcome p{ padding:0px; margin:0px;}
+	#galleryContent{width:872px;margin:0 auto;}
+	#galleryWelcome{font-size:20px;text-align:center;padding:45px;}
+	#galleryWelcome p{padding:0;margin:0;}
 /*** Slider **************************/
-	#sliderContainer{width:872px; height:auto; margin:103px 0px 55px 0px!important;}
-	.slide{width:872px; height:auto; margin:0px;}
+	#sliderContainer{width:872px;height:auto;margin:103px 0 55px!important;}
+	.slide{width:872px;height:auto;margin:0;}
+/**aboutUs.html ************************/
+/*** Content *****************************/
+	#aboutUsContent{width:872px;padding:15px;margin:103px auto 0;}
+	#aboutUsWelcomeMessage{font-size:40px;}
+	#aboutUsContent p{margin:0;padding:0;font-size:30px;}
 }
 /*======================================================================================================================================================================================================================*/
 /* Other Specific Stylings ********************/
 /** index.html **********************/
 /*** Introduction ********************/
-	@media only screen and (min-width:450px){#introduction{ height:225px;}}
-	@media only screen and (min-width:500px){#introduction{ height:254px;}}
-	@media only screen and (min-width:550px){#introduction{ height:282px;}}
-	@media only screen and (min-width:600px){#introduction{ height:310px;}}
-	@media only screen and (min-width:650px){#introduction{ height:338px;}}
-	@media only screen and (min-width:700px){#introduction{ height:366px;}}
-	@media only screen and (min-width:750px){#introduction{ height:395px;}}
-	@media only screen and (min-width:800px){#introduction{background: #f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top; background-size:872px 450px;} #introduction img{width:174px; height:135px;}}
+	@media only screen and (min-width:250px){#introduction{height:140.625px;}}
+	@media only screen and (min-width:300px){#introduction{height:168.75px;}}
+	@media only screen and (min-width:350px){#introduction{height:196.875px;}}
+	@media only screen and (min-width:400px){#introduction{height:225px;}}
+	@media only screen and (min-width:450px){#introduction{height:253.125px;}}
+	@media only screen and (min-width:500px){#introduction{height:281.25px;}}
+	@media only screen and (min-width:550px){#introduction{height:309.375px;}}
+	@media only screen and (min-width:600px){#introduction{height:337.5px;}}
+	@media only screen and (min-width:650px){#introduction{height:365.625px;}}
+	@media only screen and (min-width:700px){#introduction{height:393.75px;}}
+	@media only screen and (min-width:750px){#introduction{height:421.87499px;}}
+	@media only screen and (min-width:800px){#introduction{background:#f4f4f4 url("../images/Home/VEX In the Zone.png") no-repeat center top;background-size:872px 490.5px;}#introduction img{width:174px;height:135px;}}
 /*** Content ********************/
 
 /*** Boxes ********************/
 
 /*======================================================================================================================================================================================================================*/
 /* W3.CSS - Pro ***************/
-.w3-red-text{ color:#f00!important;}
-.w3-gray-text{ color:#35424a!important;}
-.w3-black-text{	color:#000!important;}
-.w3-white-text{	color:#fff!important;}
+.w3-red-text{color:#f00!important;}
+.w3-gray-text{color:#35424a!important;}
+.w3-black-text{color:#000!important;}
+.w3-white-text{color:#fff!important;}
 
-.w3-red-bg{	background-color:#f00!important;}
+.w3-red-bg{background-color:#f00!important;}
 .w3-gray-bg{background-color:#35424a!important;}
-.w3-black-bg{ background-color:#000!important;}
-.w3-white-bg{ background-color:#f4f4f4!important;}
+.w3-black-bg{background-color:#000!important;}
+.w3-white-bg{background-color:#f4f4f4!important;}
 
 .w3-hover-red-text:hover{color:#f00!important;}
-.w3-hover-gray-text:hover{ color:#35424a!important;}
-.w3-hover-black-text:hover{ color:#000!important;}
-.w3-hover-white-text:hover{ color:#fff!important;}
+.w3-hover-gray-text:hover{color:#35424a!important;}
+.w3-hover-black-text:hover{color:#000!important;}
+.w3-hover-white-text:hover{color:#fff!important;}
 
-.w3-hover-red-bg:hover{ background-color:#f00!important;}
-.w3-hover-gray-bg:hover{ background-color:#35424a!important;}
-.w3-hover-black-bg:hover{ background-color:#000!important;}
-.w3-hover-white-bg:hover{ background-color:#f4f4f4!important;}
+.w3-hover-red-bg:hover{background-color:#f00!important;}
+.w3-hover-gray-bg:hover{background-color:#35424a!important;}
+.w3-hover-black-bg:hover{background-color:#000!important;}
+.w3-hover-white-bg:hover{background-color:#f4f4f4!important;}
